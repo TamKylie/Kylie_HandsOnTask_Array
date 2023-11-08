@@ -1,0 +1,22 @@
+//Write a program to find the maximum value 
+//from an array [ 1, 55, 33, 22, 33] in your prefered language?
+//Java
+
+public class Main{
+	
+	public static void main(String[] args){
+		//declare the array and insert the numbers
+		int array[] = {1, 55, 33, 22, 33};
+		int maxValue = 0; //Initialize to 0
+		
+		//for loop through the array elements
+		for(int i = 0; i<5; i++){
+			if (array[i] > maxValue){
+				maxValue = array[i]; //if larger element is found,set it as maxValue 
+			}
+		}
+		
+		//Print the maximum value
+		System.out.println("The maximum value in this array is " + maxValue);
+	}	
+}
